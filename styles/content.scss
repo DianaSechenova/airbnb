@@ -21,8 +21,8 @@
 }
 
 .section-function {
-  min-width: 383px;
-  @include radiusImages;
+  min-height: 96px;
+  @include radiusContainer;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
@@ -40,6 +40,28 @@
     align-self: center;
     line-height: 24px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .page-main {
+    margin: 0 40px;
+  }
+  .section-function {
+    min-height: 200px;
+    width: 100%;
+    &__inner {
+      display: block;
+    }
+    &__img img {
+      max-width: 100%;
+      display: block;
+    }
+    &__row {
+      margin: 0;
+      padding: 16px;
+      display: block;
+    }
   }
 }
 

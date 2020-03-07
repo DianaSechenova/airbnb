@@ -330,7 +330,7 @@ button {
 }
 
 .section-function {
-  min-width: 383px;
+  min-height: 96px;
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.02);
@@ -365,6 +365,28 @@ button {
   font-size: 14px;
 }
 
+@media (max-width: 1100px) {
+  .page-main {
+    margin: 0 40px;
+  }
+  .section-function {
+    min-height: 200px;
+    width: 100%;
+  }
+  .section-function__inner {
+    display: block;
+  }
+  .section-function__img img {
+    max-width: 100%;
+    display: block;
+  }
+  .section-function__row {
+    margin: 0;
+    padding: 16px;
+    display: block;
+  }
+}
+
 .promotion {
   min-height: 200px;
   width: 100%;
@@ -378,7 +400,7 @@ button {
 
 .promotion__img {
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 10px;
   width: 100%;
 }
 

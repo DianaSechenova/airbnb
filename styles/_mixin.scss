@@ -15,5 +15,13 @@
 
 @mixin radiusImages {
   overflow: hidden;
+  border-radius: 10px;
+}
+
+@mixin radiusContainer {
+  overflow: hidden;
   border-radius: 12px;
+}
+@mixin textDetails {
+  
 }
