@@ -1,0 +1,60 @@
+@import "./mixin";
+@import "./variables.scss";
+
+.form-container {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 441px;
+  border: 32px solid $white-color;
+  border-radius: 4px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  &__inner {
+    background-color: $white-color;
+    position: relative;
+
+  }
+  &__title {
+    font-size: 1em;
+    line-height: 36px;
+  }
+  &__place {
+    @include formDetals;
+  }
+  &__date {
+    display: flex;
+    margin: 8px 0;
+  }
+  &__input {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 17px;
+    height: 48px;
+    padding: 12px;
+    color: #484848;
+    margin: 8px 0;
+  }
+  &__lable {
+    font-size: 14px;
+    font-weight: 800px;
+    padding-bottom: $spasing;
+    letter-spacing: 1px;
+  }
+  &__button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &_btn {
+      border-radius: 4px;
+      background-color: #ff5a5f;
+      padding: 10px 22px;
+      border: transparent;
+      color: $white-color;
+      text-align: center;
+    }
+  }
+}

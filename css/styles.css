@@ -189,7 +189,6 @@ a {
 input,
 button {
   font-size: 1rem;
-  font-family: "nunito";
 }
 
 .content-wrapper {
@@ -264,7 +263,6 @@ a {
 input,
 button {
   font-size: 1rem;
-  font-family: "nunito";
 }
 
 .content-wrapper {
@@ -838,5 +836,75 @@ button {
   .col-xs-offset-12 {
     margin-left: 100%;
   }
+}
+
+.form-container {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 441px;
+  border: 32px solid #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.form-container__inner {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.form-container__title {
+  font-size: 1em;
+  line-height: 36px;
+}
+
+.form-container__place {
+  margin: 16px 0;
+  font-size: 14px;
+  display: block;
+}
+
+.form-container__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0;
+}
+
+.form-container__input {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  font-size: 17px;
+  height: 48px;
+  padding: 12px;
+  color: #484848;
+  margin: 8px 0;
+}
+
+.form-container__lable {
+  font-size: 14px;
+  font-weight: 800px;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.form-container__button {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.form-container__button_btn {
+  border-radius: 4px;
+  background-color: #ff5a5f;
+  padding: 10px 22px;
+  border: transparent;
+  color: #ffffff;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

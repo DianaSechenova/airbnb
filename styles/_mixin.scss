@@ -22,6 +22,9 @@
   overflow: hidden;
   border-radius: 12px;
 }
-@mixin textDetails {
-  
+
+@mixin formDetals {
+  margin: $margin-form;
+  font-size: 14px;
+  display: block;
 }
