@@ -1,18 +1,19 @@
 @import "./mixin";
 @import "./variables.scss";
 
-.form-container {
+.form-wrapper {
   position: absolute;
-  top: 180px;
+  top: 120px;
   left: 80px;
   width: 441px;
+}
+
+.form-container {
   border: 32px solid $white-color;
   border-radius: 4px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   &__inner {
     background-color: $white-color;
-    position: relative;
-
   }
   &__title {
     font-size: 1em;
@@ -40,21 +41,46 @@
   &__lable {
     font-size: 14px;
     font-weight: 800px;
-    padding-bottom: $spasing;
     letter-spacing: 1px;
+    padding-bottom: $spasing;
   }
   &__button {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    overflow: auto;
+    padding-top: 16px;
     &_btn {
+      border: 2px solid ff5a5f;
       border-radius: 4px;
       background-color: #ff5a5f;
       padding: 10px 22px;
       border: transparent;
       color: $white-color;
       text-align: center;
+      float: right;
     }
+  }
+}
+@media (max-width: 1100px) {
+  .page-header {
+    display: flex;
+    position: static;
+    flex-direction: column;
+  }
+  .form-wrapper {
+    display: flex;
+    position: static;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .form-container__date {
+    display: flex;
+    flex-direction: row;
+  }
+  .form-container__button_btn {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 10px 22px;
   }
 }
