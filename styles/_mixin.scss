@@ -15,7 +15,7 @@
 
 @mixin radiusImages {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: $spasing;
 }
 
 @mixin radiusContainer {

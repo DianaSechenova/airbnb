@@ -1,19 +1,16 @@
 @import "./mixin";
 @import "./variables.scss";
 
-.form-wrapper {
+.form {
   position: absolute;
   top: 120px;
   left: 80px;
   width: 441px;
-}
-
-.form-container {
-  border: 32px solid $white-color;
-  border-radius: 4px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   &__inner {
     background-color: $white-color;
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   }
   &__title {
     font-size: 1em;
@@ -25,6 +22,9 @@
   &__date {
     display: flex;
     margin: 8px 0;
+    &_widtch {
+      width: 50%;
+    }
   }
   &__input {
     width: 100%;
@@ -59,13 +59,13 @@
     }
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   .page-header {
     display: flex;
     position: static;
     flex-direction: column;
   }
-  .form-wrapper {
+  .form {
     display: flex;
     position: static;
     flex-direction: column;
@@ -73,11 +73,11 @@
     padding: 0;
     width: 100%;
   }
-  .form-container__date {
+  .form__date {
     display: flex;
     flex-direction: row;
   }
-  .form-container__button_btn {
+  .form__button_btn {
     display: inline-block;
     position: relative;
     width: 100%;

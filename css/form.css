@@ -1,40 +1,41 @@
-.form-wrapper {
+.form {
   position: absolute;
   top: 120px;
   left: 80px;
   width: 441px;
 }
 
-.form-container {
-  border: 32px solid #ffffff;
+.form__inner {
+  background-color: #ffffff;
+  padding: 32px;
   border-radius: 4px;
   -webkit-box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
           box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
-.form-container__inner {
-  background-color: #ffffff;
-}
-
-.form-container__title {
+.form__title {
   font-size: 1em;
   line-height: 36px;
 }
 
-.form-container__place {
+.form__place {
   margin: 16px 0;
   font-size: 14px;
   display: block;
 }
 
-.form-container__date {
+.form__date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 8px 0;
 }
 
-.form-container__input {
+.form__date_widtch {
+  width: 50%;
+}
+
+.form__input {
   width: 100%;
   display: inline-block;
   border: none;
@@ -47,19 +48,19 @@
   margin: 8px 0;
 }
 
-.form-container__lable {
+.form__lable {
   font-size: 14px;
   font-weight: 800px;
   letter-spacing: 1px;
   padding-bottom: 8px;
 }
 
-.form-container__button {
+.form__button {
   overflow: auto;
   padding-top: 16px;
 }
 
-.form-container__button_btn {
+.form__button_btn {
   border: 2px solid ff5a5f;
   border-radius: 4px;
   background-color: #ff5a5f;
@@ -70,7 +71,7 @@
   float: right;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -81,7 +82,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .form-wrapper {
+  .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,7 +95,7 @@
     padding: 0;
     width: 100%;
   }
-  .form-container__date {
+  .form__date {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,7 +104,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .form-container__button_btn {
+  .form__button_btn {
     display: inline-block;
     position: relative;
     width: 100%;

@@ -64,16 +64,14 @@ button {
   padding-bottom: 40px;
 }
 
+.text-regular {
+  line-height: 24px;
+  font-weight: 400;
+  color: #222222;
+  padding-top: 8px;
+}
+
 .page-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin: 0 80px;
 }
 
@@ -128,7 +126,7 @@ button {
   font-size: 14px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   .page-main {
     margin: 0 40px;
   }
@@ -163,7 +161,7 @@ button {
 
 .promotion__img {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -187,13 +185,14 @@ button {
 
 .promotion__country {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: #222222;
 }
 
 .promotion__title {
   margin-top: 8px;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .promotion__link {
@@ -202,5 +201,62 @@ button {
   z-index: 1;
   width: 100%;
   height: 100%;
+  color: #222222;
+  margin-left: 8px;
+}
+
+.section-adventure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 40px 0;
+}
+
+.section-adventure__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-adventure__container:not(:first-child) {
+  margin-left: 8px;
+}
+
+.section-adventure__img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-adventure__wrapper {
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.section-adventure__wrapper img {
+  display: block;
+  max-height: 100%;
+}
+
+@media (max-width: 992px) {
+  .section-adventure {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-adventure__container {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
 }
 /*# sourceMappingURL=content.css.map */
