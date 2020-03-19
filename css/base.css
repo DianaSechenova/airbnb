@@ -49,18 +49,8 @@ button {
   font-weight: 800;
 }
 
-.page-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .spesing {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin: 8px;
   padding-bottom: 40px;
 }
 
@@ -69,5 +59,23 @@ button {
   font-weight: 400;
   color: #222222;
   padding-top: 8px;
+}
+
+.link-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  cursor: pointer;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.link-next > a {
+  text-decoration: underline;
+}
+
+.link-next > span {
+  margin-left: 8px;
 }
 /*# sourceMappingURL=base.css.map */

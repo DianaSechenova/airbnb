@@ -48,14 +48,8 @@ button {
   font-weight: 800;
 }
 
-.page-main {
-  display: flex;
-  justify-content: center;
-}
-
 .spesing {
-  margin-top: $spasing;
-  margin-bottom: $spasing;
+  margin: $spasing;
   padding-bottom: 40px;
 }
 
@@ -64,4 +58,18 @@ button {
   font-weight: 400;
   color: $default-text-color;
   padding-top: $spasing;
+}
+
+.link-next {
+  display: flex;
+  margin-top: 16px;
+  cursor: pointer;
+  line-height: 20px;
+  font-weight: 600;
+  > a{
+    text-decoration: underline;;
+  }
+  > span {
+    margin-left: $spasing;
+  }
 }

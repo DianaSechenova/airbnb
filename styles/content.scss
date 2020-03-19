@@ -3,7 +3,9 @@
 @import "./base.scss";
 
 .page-main {
-  margin: 0 80px;
+ @include spasingContentPage;
+  display: flex;
+  justify-content: center;
 }
 
 .global-content {
@@ -104,15 +106,13 @@
 }
 
 .section-adventure {
-  display: flex;
-  flex-direction: row;
-  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  //margin: 40px 0;
   &__container {
     display: flex;
     flex-direction: column;
-  }
-  &__container:not(:first-child) {
-    margin-left: $spasing;
   }
   &__img {
     max-width: 100%;
@@ -129,8 +129,9 @@
 }
 @media (max-width: 992px) {
   .section-adventure {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-items: center;
     &__container {
       flex-basis: 200px;
     }
