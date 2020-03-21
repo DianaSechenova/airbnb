@@ -71,26 +71,26 @@
   float: right;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: static;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: static;
   }
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: static;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: static;
     margin: 0;
     padding: 0;
     width: 100%;

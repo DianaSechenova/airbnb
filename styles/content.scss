@@ -2,8 +2,11 @@
 @import "./variables.scss";
 @import "./base.scss";
 
+.content-spasing {
+  @include spasingContentPage;
+}
+
 .page-main {
- @include spasingContentPage;
   display: flex;
   justify-content: center;
 }
@@ -42,7 +45,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .page-main {
     margin: 0 40px;
   }
@@ -61,6 +64,9 @@
       padding: 16px;
       display: block;
     }
+  }
+  .content-spasing {
+    margin: 0 20px;
   }
 }
 
@@ -109,10 +115,8 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1em;
-  //margin: 40px 0;
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include column;
   }
   &__img {
     max-width: 100%;
@@ -127,13 +131,18 @@
     max-height: 100%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 960px) {
+  .content-spasing {
+    margin: 0 20px;
+  }
   .section-adventure {
     grid-template-columns: repeat(2, 1fr);
-
     justify-items: center;
     &__container {
       flex-basis: 200px;
     }
+  }
+  .section-adventure:last-child{
+    display: none;
   }
 }

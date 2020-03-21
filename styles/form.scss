@@ -59,23 +59,20 @@
     }
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .page-header {
-    display: flex;
+    @include column;
     position: static;
-    flex-direction: column;
   }
   .form {
-    display: flex;
+    @include column;
     position: static;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     width: 100%;
   }
   .form__date {
-    display: flex;
-    flex-direction: row;
+    @include string;
   }
   .form__button_btn {
     display: inline-block;

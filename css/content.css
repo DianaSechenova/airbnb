@@ -51,7 +51,7 @@ button {
 
 .spesing {
   margin: 8px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .text-regular {
@@ -62,25 +62,26 @@ button {
 }
 
 .link-next {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-top: 16px;
-  cursor: pointer;
   line-height: 20px;
   font-weight: 600;
-}
-
-.link-next > a {
-  text-decoration: underline;
+  margin-left: 8px;
 }
 
 .link-next > span {
   margin-left: 8px;
 }
 
-.page-main {
+.link-next > a {
+  text-decoration: underline;
+}
+
+.content-spasing {
   margin: 0 80px;
+}
+
+.page-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +141,7 @@ button {
   font-size: 14px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .page-main {
     margin: 0 40px;
   }
@@ -159,6 +160,9 @@ button {
     margin: 0;
     padding: 16px;
     display: block;
+  }
+  .content-spasing {
+    margin: 0 20px;
   }
 }
 
@@ -253,7 +257,10 @@ button {
   max-height: 100%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
+  .content-spasing {
+    margin: 0 20px;
+  }
   .section-adventure {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -262,6 +269,9 @@ button {
   .section-adventure__container {
     -ms-flex-preferred-size: 200px;
         flex-basis: 200px;
+  }
+  .section-adventure:last-child {
+    display: none;
   }
 }
 /*# sourceMappingURL=content.css.map */

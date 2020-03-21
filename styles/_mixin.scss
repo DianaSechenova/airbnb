@@ -33,3 +33,12 @@
   margin: 0 80px;
 }
 
+@mixin string {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}

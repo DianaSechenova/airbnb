@@ -50,7 +50,7 @@ button {
 
 .spesing {
   margin: $spasing;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .text-regular {
@@ -61,15 +61,15 @@ button {
 }
 
 .link-next {
-  display: flex;
+  display: block;
   margin-top: 16px;
-  cursor: pointer;
   line-height: 20px;
   font-weight: 600;
-  > a{
-    text-decoration: underline;;
-  }
+  margin-left: $spasing;
   > span {
     margin-left: $spasing;
+  }
+  > a {
+    text-decoration: underline;
   }
 }
